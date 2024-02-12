@@ -11,13 +11,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 200px;
   height: 100vh;
+  position: relative;
 }
 
 .btn {
   border-radius: 0 10px 10px 0 !important;
 }
 
-.custom-container .container {
+.dashboard {
   border-radius: 10px;
   background-color: #fff;
   position: absolute;
@@ -25,12 +26,31 @@ body {
   transform: translate(-50%);
 }
 
+input[type="text"] {
+  font-size: 1.125rem;
+}
+
+form {
+  width: 75%;
+}
+.dashboard h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.dashboard p {
+  font-size: 16px;
+}
+
 #map {
   z-index: -1;
   margin-top: 90px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) {
   .custom-container {
     margin: 0;
     padding: 0;
@@ -38,5 +58,16 @@ body {
     background-repeat: no-repeat;
     background-size: 100vw 200px;
     height: 100vh;
+  }
+  .border-right {
+    border-right: 2px solid lightgray;
+  }
+
+  form {
+    width: 40%;
+  }
+
+  .dashboard h2 {
+    font-size: 1rem;
   }
 }

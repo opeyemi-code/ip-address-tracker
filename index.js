@@ -72,7 +72,6 @@ function getDetails(e) {
   const link = getUrl(inputValue, dataType);
 
   fetchData(link).then(displayData).catch(displayFetchError);
-  inputField.value = "";
 }
 
 btn.addEventListener("click", getDetails);
